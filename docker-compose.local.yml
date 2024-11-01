@@ -1,0 +1,9 @@
+services:
+  backend:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./main.py:/app/main.py:ro
+    environment:
+      - WATCHFILES_FORCE_POLLING=true

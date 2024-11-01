@@ -1,0 +1,8 @@
+services:
+  backend:
+    image: danicrdev/poli-ci-cd-backend
+    ports:
+      - 8000:8000
+
+  db:
+    image: redis:7.4
