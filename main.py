@@ -18,6 +18,7 @@ def get_last_connection():
     
     # Get current time
     current_time = datetime.datetime.now()
+    
     # Set time connection in database
     redis_connection.set("last-connection", str(current_time))
 
