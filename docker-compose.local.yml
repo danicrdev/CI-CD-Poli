@@ -7,3 +7,5 @@ services:
       - ./main.py:/app/main.py:ro
     environment:
       - WATCHFILES_FORCE_POLLING=true
+    env_file:
+      - .env
